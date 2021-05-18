@@ -50,6 +50,7 @@ form button:hover{
 
 .todo-list {
     min-width: 30%;
+    max-width: 668px;
     list-style: none;
 }
 
@@ -132,7 +133,10 @@ select {
 
 @media (max-device-width: 767px) {
 
-    
+    html, body {
+        width:fit-content;
+        height: auto;
+    }
    
     header, form {
         min-height: 10vh;
@@ -155,12 +159,8 @@ select {
         padding: 0.3rem;
     }
 
-    option {
-        padding: 50px;
-    }
-
     ul {
-        margin-top: 5vh;
+        margin-top: 5vh;    
     }
 
     .todo {
